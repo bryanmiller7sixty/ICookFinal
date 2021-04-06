@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
 /*
     Controls log in portion of the application, effectively enabling the user to log in or register an account
 */
-public class LoginScreenGUIController implements Initializable {
+public class LoginScreenGUIController implements Initializable, Cloneable {
     //Create the encrypting object that takes in a 16 char value; the final decrypted value will have
     //a random 16 character string
     CryptographerAES cryptoObject = new CryptographerAES("abcdefghijklmnos");
